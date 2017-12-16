@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <!--            Side bar profile-->
         <div flex-no-shrink="">
-            <div class="nav-fold"><a href="<?php echo site_url('Profile/index');?>" ui-sref="app.page.profile"><span
+            <div class="nav-fold"><a href="<?php echo site_url('Profile/index'); ?>" ui-sref="app.page.profile"><span
                             class="pull-left"><img src="<?php echo base_url() ?>assets/images/a2.jpg" alt="..."
                                                    class="w-40 r"></span> <span
                             class="clear hidden-folded p-x"><span class="block _500">Jack Perez</span> <small
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Main</small>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Dashboard/index');?>">
+                        <a href="<?php echo site_url('Dashboard/index'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Reservations/index');?>">
+                        <a href="<?php echo site_url('Reservations/index'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Calendar/index');?>">
+                        <a href="<?php echo site_url('Calendar/index'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -75,12 +75,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="<?php echo site_url('New_employee/index');?>">
+                                <a href="<?php echo site_url('New_employee/index'); ?>">
                                     <span class="nav-text">New employee</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('Manage_employees/index');?>">
+                                <a href="<?php echo site_url('Manage_employees/index'); ?>">
                                     <span class="nav-text">Manage employees</span>
                                 </a>
                             </li>
@@ -100,12 +100,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="<?php echo site_url('New_patient/index');?>">
+                                <a href="<?php echo site_url('New_patient/index'); ?>">
                                     <span class="nav-text">New patient</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('Manage_patients/index');?>">
+                                <a href="<?php echo site_url('Manage_patients/index'); ?>">
                                     <span class="nav-text">Manage patients</span>
                                 </a>
                             </li>
@@ -115,7 +115,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Connect</small>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Messenger/index');?>">
+                        <a href="<?php echo site_url('Messenger/index'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'../assets/images/i_0.svg'"></span>
@@ -139,20 +139,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div flex-no-shrink="">
             <nav ui-nav="">
                 <ul class="nav">
-<!--                    <li>-->
-<!--                        <div class="b-b b m-v-sm"></div>-->
-<!--                    </li>-->
-<!--                    <li class="no-bg"><a class="auto"><span class="nav-icon"><i class="material-icons inline"></i> <i-->
-<!--                                        class="material-icons text-warn none"></i></span> <span-->
-<!--                                    class="nav-text">Filter</span></a>-->
-<!--                    </li>-->
-<!--                    <li class="no-bg"><a><span class="nav-icon"><i class="material-icons"></i></span> <span-->
-<!--                                    class="nav-text">Star<small class="block text-muted">Border</small></span></a>-->
-<!--                    </li>-->
+                    <li>
+                        <div class="b-b b m-v-sm"></div>
+                    </li>
+                    <li class="no-bg"><a class="auto"><span class="nav-icon"><i class="material-icons inline"></i> <i
+                                        class="material-icons text-warn none"></i></span> <span
+                                    class="nav-text">Notification</span></a>
+                    </li>
                     <li>
                         <div class="b-b b m-t-sm"></div>
                     </li>
-                    <li class="no-bg"><a href="<?php echo site_url('Sign_in/index');?>"><span class="nav-icon"><i class="material-icons"></i></span> <span
+                    <li class="no-bg"><a href="<?php echo site_url('Sign_in/index'); ?>"><span class="nav-icon"><i
+                                        class="material-icons"></i></span> <span
                                     class="nav-text">Logout</span></a></li>
                 </ul>
             </nav>
