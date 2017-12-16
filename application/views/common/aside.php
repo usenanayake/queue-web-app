@@ -115,13 +115,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Connect</small>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Inbox/index');?>">
+                        <a href="<?php echo site_url('Messenger/index');?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'../assets/images/i_0.svg'"></span>
                            </i>
                            </span>
-                            <span class="nav-text">Inbox</span>
+                            <span class="nav-text">Messenger</span>
                         </a>
                     </li>
                     <li class="nav-header hidden-folded">

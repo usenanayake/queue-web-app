@@ -31,9 +31,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         Inbox
                                     </a>
                                     <a class="nav-link">
-                                        Sent
-                                    </a>
-                                    <a class="nav-link">
                                         Trash
                                     </a>
                                 </div>
@@ -60,8 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <span class="caret"></span>
                                         </button>
                                         <div class="dropdown-menu text-left text-sm">
+                                            <a class="dropdown-item" href="">All</a>
                                             <a class="dropdown-item" href="">Unread</a>
-                                            <a class="dropdown-item" href="">Starred</a>
                                         </div>
                                     </div>
                                     <div class="btn-group">

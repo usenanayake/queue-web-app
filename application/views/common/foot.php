@@ -1,12 +1,12 @@
 <!-- jQuery -->
 <!--Moved the new version to head-->
-<!--<script src="--><?php //echo base_url() ?><!--assets/libs/jquery/jquery/dist/jquery.js"></script>-->
+<script src="<?php echo base_url() ?>assets/libs/jquery/jquery/dist/jquery.js"></script>
 
 <!-- Bootstrap -->
 <!--Moved the new version to head-->
-<!--<script src="--><?php //echo base_url() ?><!--assets/libs/jquery/tether/dist/js/tether.min.js"></script>-->
+<script src="<?php echo base_url() ?>assets/libs/jquery/tether/dist/js/tether.min.js"></script>
 <!--Moved the new version to head-->
-<!--<script src="--><?php //echo base_url() ?><!--assets/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>-->
+<script src="<?php echo base_url() ?>assets/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
 
 <!-- core -->
 <script src="<?php echo base_url() ?>assets/libs/jquery/underscore/underscore-min.js"></script>

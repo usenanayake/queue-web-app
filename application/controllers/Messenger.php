@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Inbox extends CI_Controller
+class Messenger extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('inbox');
+        $this->load->view('messenger');
     }
 }
