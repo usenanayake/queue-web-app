@@ -6,8 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <!--    Head-->
     <?php include 'common/head.php' ?>
-    <link rel="stylesheet" type="text/css"
-          href="<?php echo base_url() ?>assets/libs/jquery/plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/libs/jquery/plugins/integration/bootstrap/3/dataTables.bootstrap.css">
 </head>
 <body>
 <div class="app" id="app">
@@ -28,39 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div id="DataTables_Table_0_wrapper"
                              class="dataTables_wrapper form-inline dt-bootstrap no-footer">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="dataTables_length" id="DataTables_Table_0_length">
-                                        <label>
-                                            Show
-                                            <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0"
-                                                    class="form-control input-sm">
-                                                <option value="10">10</option>
-                                                <option value="25">25</option>
-                                                <option value="50">50</option>
-                                                <option value="100">100</option>
-                                            </select>
-                                            entries
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input
-                                                    type="search" class="form-control input-sm" placeholder=""
-                                                    aria-controls="DataTables_Table_0"></label></div>
-                                </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-sm-12">
-                                    <table ui-jp="dataTable" ui-options="{
-                                        sAjaxSource: 'api/datatable.json',
-                                        aoColumns: [
-                                        { mData: 'engine' },
-                                        { mData: 'browser' },
-                                        { mData: 'platform' },
-                                        { mData: 'version' },
-                                        { mData: 'grade' }
-                                        ]
-                                        }" class="table table-striped b-t b-b dataTable no-footer"
+                                    <table 
+
+                                        class="table table-striped b-t b-b dataTable no-footer"
                                            id="DataTables_Table_0" role="grid"
                                            aria-describedby="DataTables_Table_0_info" style="width: 1432px;">
                                         <thead>
@@ -89,109 +60,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Firefox 1.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.7</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="even">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Firefox 1.5</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="even">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Firefox 3.0</td>
-                                            <td>Win 2k+ / OSX.3+</td>
-                                            <td>1.9</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Camino 1.0</td>
-                                            <td>OSX.2+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="even">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Camino 1.5</td>
-                                            <td>OSX.3+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Netscape 7.2</td>
-                                            <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                            <td>1.7</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="even">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Netscape Browser 8</td>
-                                            <td>Win 98SE+</td>
-                                            <td>1.7</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Netscape Navigator 9</td>
-                                            <td>Win 98+ / OSX.2+</td>
-                                            <td>1.8</td>
-                                            <td>A</td>
-                                        </tr>
-                                        <tr role="row" class="even">
-                                            <td class="sorting_1">Gecko</td>
-                                            <td>Mozilla 1.0</td>
-                                            <td>Win 95+ / OSX.1+</td>
-                                            <td>1</td>
-                                            <td>A</td>
-                                        </tr>
                                         </tbody>
                                     </table>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="dataTables_info" id="DataTables_Table_0_info" role="status"
-                                         aria-live="polite">Showing 1 to 10 of 57 entries
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="dataTables_paginate paging_simple_numbers"
-                                         id="DataTables_Table_0_paginate">
-                                        <ul class="pagination">
-                                            <li class="paginate_button previous disabled"
-                                                aria-controls="DataTables_Table_0" tabindex="0"
-                                                id="DataTables_Table_0_previous"><a href="#">Previous</a></li>
-                                            <li class="paginate_button active" aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">1</a></li>
-                                            <li class="paginate_button " aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">2</a></li>
-                                            <li class="paginate_button " aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">3</a></li>
-                                            <li class="paginate_button " aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">4</a></li>
-                                            <li class="paginate_button " aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">5</a></li>
-                                            <li class="paginate_button " aria-controls="DataTables_Table_0"
-                                                tabindex="0"><a href="#">6</a></li>
-                                            <li class="paginate_button next" aria-controls="DataTables_Table_0"
-                                                tabindex="0" id="DataTables_Table_0_next"><a href="#">Next</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +71,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
 </div>
+
 <!--Foot-->
 <?php include 'common/foot.php' ?>
+
+<script src="<?php echo base_url() ?>assets/libs/jquery/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url() ?>assets/libs/jquery/plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+<script type="text/javascript">
+    var table;
+    $(document).ready(function() {
+        // Datatables
+        table = $('#DataTables_Table_0').DataTable({
+            "processing": true, // Feature control the processing indicator.
+            "serverSide": true, // Feature control DataTables' server-side processing mode.
+            "order": [], // Initial no order.
+
+            // Load data for the table's content from an Ajax source
+            "ajax": {
+                "url": "<?php echo site_url('Manage_employees/get_employee_list_ajax'); ?>",
+                "type": "POST"
+            },
+
+            // Set column definition initialisation properties.
+            "columnDefs": [
+                {
+                    "targets": [ 0 ], // First column / numbering column
+                    "orderable": false, // Set not orderable
+                },
+            ],
+        });
+    });
+</script>
 </body>
 </html>

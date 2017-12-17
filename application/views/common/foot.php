@@ -1,5 +1,5 @@
 <!-- jQuery -->
-<!--<script src="--><?php //echo base_url() ?><!--assets/libs/jquery/jquery/dist/jquery.js"></script>-->
+<script src="<?php echo base_url() ?>assets/libs/jquery/jquery/dist/jquery.js"></script>
 
 <!-- Bootstrap -->
 <script src="<?php echo base_url() ?>assets/libs/jquery/tether/dist/js/tether.min.js"></script>

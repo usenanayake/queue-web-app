@@ -1,10 +1,5 @@
 .DS_Store
-
-!application/*/.htaccess
-
-/vendor/
-
+vendor/
 flatkit113/
-bower_components/
-
 workspace.xml
+user_guide/

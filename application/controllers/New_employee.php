@@ -9,7 +9,6 @@ class New_employee extends CI_Controller
 
         $this->load->helper(array('form'));
         $this->load->library(array('session', 'form_validation', 'email'));
-        $this->load->database();
         $this->load->model('Employee_model');
     }
 

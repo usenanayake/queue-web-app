@@ -46,6 +46,7 @@ var uiLoad = uiLoad || {};
 		var deferred = $.Deferred();
 		var script = $document.createElement('script');
 		script.src = src;
+
 		script.onload = function (e) {
 			deferred.resolve(e);
 		};

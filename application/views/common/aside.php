@@ -144,7 +144,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </li>
                     <li class="no-bg"><a class="auto"><span class="nav-icon"><i class="material-icons inline"></i> <i
                                         class="material-icons text-warn none"></i></span> <span
-                                    class="nav-text">Notification</span></a>
+                                    class="nav-text">Notifications</span></a>
                     </li>
                     <li>
                         <div class="b-b b m-t-sm"></div>
