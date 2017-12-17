@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="padding">
                 <div class="box">
                     <div class="box-header">
-                        <h2>Manage Employees</h2>
+                        <h2>Manage Patients</h2>
                     </div>
                     <div class="table-responsive">
                         <div id="DataTables_Table_0_wrapper"
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </th>
                                             <th style="width: 322px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="Job role: activate to sort column ascending">Job role
+                                                aria-label="Job role: activate to sort column ascending">Email
                                             </th>
                                             <th style="width: 178px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
@@ -90,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             // Load data for the table's content from an Ajax source
             "ajax": {
-                "url": "<?php echo site_url('Manage_employees/get_employee_list_ajax'); ?>",
+                "url": "<?php echo site_url('Manage_patients/get_patient_list_ajax'); ?>",
                 "type": "POST"
             },
 

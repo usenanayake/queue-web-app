@@ -26,7 +26,7 @@ class Manage_employees extends CI_Controller
             // $row[] = $no;
             $row[] = $employee->first_name;
             $row[] = $employee->last_name;
-            $row[] = $employee->role_id;
+            $row[] = $employee->name;
             $row[] = $employee->nic;
             $row[] = $employee->telephone;
 

@@ -72,7 +72,9 @@ class Employee_model extends CI_Model
 
     private function _get_datatables_query()
     {
+        $this->db->select('*');
         $this->db->from('employee');
+        $this->db->join('role', 'employee.role_id = role.id');
  
         $i = 0;
      
@@ -104,7 +106,7 @@ class Employee_model extends CI_Model
         } 
         else
         {
-            $order = array('id' => 'asc'); // Default order
+            $order = array('employee.id' => 'asc'); // Default order
             $this->db->order_by(key($order), $order[key($order)]);
         }
     }

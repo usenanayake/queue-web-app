@@ -6,12 +6,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <!--    Head-->
     <?php include 'common/head.php' ?>
-    <script type="text/javascript" src="<?php echo base_url() ?>bower_components/moment/min/moment.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
 
+    <link rel="stylesheet"
+          href="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/parsley.css">
-    <script src="<?php echo base_url() ?>assets/libs/jquery/parsleyjs/dist/parsley.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/edit.css" type="text/css"/>
 </head>
 <body>
 <div class="app" id="app">
@@ -47,7 +46,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="inputUsername"
                                                                name="username" placeholder="Username"
-                                                               data-parsley-required data-parsley-length="[5, 100]" data-parsley-type="alphanum">
+                                                               data-parsley-required data-parsley-length="[5, 100]"
+                                                               data-parsley-type="alphanum">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -96,33 +96,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                         birth</label>
                                                     <div class="col-sm-10">
                                                         <div class='input-group date' id='datetimepicker'>
-                                                            <input type='text' class="form-control" id="inputDob" name="dob"
+                                                            <input type='text' class="form-control" id="inputDob"
+                                                                   name="dob"
                                                                    placeholder="Date of birth"
                                                                    data-parsley-required/>
                                                             <span class="input-group-addon">
                                                                               <span class="fa fa-calendar"></span>
                                                                               </span>
                                                         </div>
-
-                                                        <!--Move this script out of view-->
-                                                        <script type="text/javascript">
-                                                            $(function () {
-                                                                $('#datetimepicker').datetimepicker({
-                                                                    format: 'DD/MM/YYYY',
-                                                                    icons: {
-                                                                        time: 'fa fa-clock-o',
-                                                                        date: 'fa fa-calendar',
-                                                                        up: 'fa fa-chevron-up',
-                                                                        down: 'fa fa-chevron-down',
-                                                                        previous: 'fa fa-chevron-left',
-                                                                        next: 'fa fa-chevron-right',
-                                                                        today: 'fa fa-screenshot',
-                                                                        clear: 'fa fa-trash',
-                                                                        close: 'fa fa-remove'
-                                                                    }
-                                                                });
-                                                            });
-                                                        </script>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -131,14 +112,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <div class="col-sm-10">
                                                         <div class="radio radio-inline">
                                                             <label class="ui-check ui-check-md">
-                                                                <input type="radio" name="gender" value="m" checked="true" data-parsley-required>
+                                                                <input type="radio" name="gender" value="m"
+                                                                       checked="true" data-parsley-required>
                                                                 <i class="dark-white"></i>
                                                                 Male
                                                             </label>
                                                         </div>
                                                         <div class="radio radio-inline">
                                                             <label class="ui-check ui-check-md">
-                                                                <input type="radio" name="gender" value="f" data-parsley-required>
+                                                                <input type="radio" name="gender" value="f"
+                                                                       data-parsley-required>
                                                                 <i class="dark-white"></i>
                                                                 Female
                                                             </label>
@@ -214,5 +197,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <!--Foot-->
 <?php include 'common/foot.php' ?>
+
+<script type="text/javascript" src="<?php echo base_url() ?>bower_components/moment/min/moment.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="<?php echo base_url() ?>assets/libs/jquery/parsleyjs/dist/parsley.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker').datetimepicker({
+            format: 'DD/MM/YYYY',
+            icons: {
+                time: 'fa fa-clock-o',
+                date: 'fa fa-calendar',
+                up: 'fa fa-chevron-up',
+                down: 'fa fa-chevron-down',
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+    });
+</script>
 </body>
 </html>

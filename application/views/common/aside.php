@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Main</small>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Dashboard/index'); ?>">
+                        <a href="<?php echo site_url('Dashboard'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Reservations/index'); ?>">
+                        <a href="<?php echo site_url('Reservations'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Calendar/index'); ?>">
+                        <a href="<?php echo site_url('Calendar'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
@@ -75,12 +75,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="<?php echo site_url('New_employee/index'); ?>">
+                                <a href="<?php echo site_url('New_employee'); ?>">
                                     <span class="nav-text">New employee</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('Manage_employees/index'); ?>">
+                                <a href="<?php echo site_url('Manage_employees'); ?>">
                                     <span class="nav-text">Manage employees</span>
                                 </a>
                             </li>
@@ -100,12 +100,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                         <ul class="nav-sub">
                             <li>
-                                <a href="<?php echo site_url('New_patient/index'); ?>">
+                                <a href="<?php echo site_url('New_patient'); ?>">
                                     <span class="nav-text">New patient</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo site_url('Manage_patients/index'); ?>">
+                                <a href="<?php echo site_url('Manage_patients'); ?>">
                                     <span class="nav-text">Manage patients</span>
                                 </a>
                             </li>
@@ -115,7 +115,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Connect</small>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('Messenger/index'); ?>">
+                        <a href="<?php echo site_url('Messenger'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
                            <span ui-include="'../assets/images/i_0.svg'"></span>
