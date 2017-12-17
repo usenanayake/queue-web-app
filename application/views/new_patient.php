@@ -28,8 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="box">
                             <div class="box-header">
                                 <h2>New Patient</h2>
-                                <small>New patient registration form.
-                                </small>
+                                <small>New patient registration form.</small>
                             </div>
                             <div class="box-divider m-a-0"></div>
                             <div class="box-body">
