@@ -127,14 +127,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class="nav-text">Messenger</span>
                         </a>
                     </li>
-                    <li class="nav-header hidden-folded">
+                    <!-- <li class="nav-header hidden-folded">
                         <small class="text-muted">Summary</small>
                     </li>
                     <li class="hidden-folded">
                         <a href="docs.html">
                             <span class="nav-text">XXXX</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div>

@@ -51,7 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="padding">
+                                    <div class="form-group row">
                                             <label for="inputDoctor"
                                                    class="col-sm-2 form-control-label">Doctor</label>
                                             <div class="col-sm-10">
@@ -61,40 +65,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                        data-parsley-maxlength="10">
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="padding">
                                         <div class="form-group row">
-                                            <label for="inputFirstName" class="col-sm-2 form-control-label">First
-                                                name</label>
+                                            <label for="inputStartTime" class="col-sm-2 form-control-label">Start time</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputFirstName"
-                                                       name="firstName" placeholder="First name"
+                                                <input type="text" class="form-control" id="inputStartTime"
+                                                       name="startTime" placeholder="Start time"
                                                        data-parsley-required data-parsley-length="[1, 100]">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputMiddleName" class="col-sm-2 form-control-label">Middle
-                                                name</label>
+                                            <label for="inputEndTime" class="col-sm-2 form-control-label">End time</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputMiddleName"
-                                                       name="middleName" placeholder="Middle name"
+                                                <input type="text" class="form-control" id="inputEndTime"
+                                                       name="endTime" placeholder="End time"
                                                        data-parsley-length="[1, 100]">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputLastName" class="col-sm-2 form-control-label">Last
-                                                name</label>
+                                            <label for="inputAverageTime" class="col-sm-2 form-control-label">Average time</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputLastName"
-                                                       name="lastName" placeholder="Last name"
+                                                <input type="text" class="form-control" id="inputAverageTime"
+                                                       name="averageTime" placeholder="Average time"
                                                        data-parsley-required data-parsley-length="[1, 100]">
                                             </div>
                                         </div>
                                         <div class="form-group row m-t-md">
                                             <div class="col-sm-offset-2 col-sm-10">
-                                                <button type="submit" class="btn white">Register</button>
+                                                <button type="submit" class="btn white">Add queue</button>
                                             </div>
                                         </div>
                                     </div>
@@ -115,24 +112,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <tr role="row">
                                             <th style="width: 251px;" class="sorting_asc" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="First name: activate to sort column descending"
-                                                aria-sort="ascending">Current no.
+                                                aria-label="Doctor: activate to sort column descending"
+                                                aria-sort="ascending">Doctor
                                             </th>
                                             <th style="width: 323px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="Last name: activate to sort column ascending">Start time
+                                                aria-label="Last name: activate to sort column ascending">Current number
                                             </th>
                                             <th style="width: 322px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="Job role: activate to sort column ascending">End time
+                                                aria-label="Job role: activate to sort column ascending">Start time
                                             </th>
                                             <th style="width: 178px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="NIC: activate to sort column ascending">Average time
+                                                aria-label="NIC: activate to sort column ascending">End time
                                             </th>
                                             <th style="width: 178px;" class="sorting" tabindex="0"
                                                 aria-controls="DataTables_Table_0" rowspan="1" colspan="1"
-                                                aria-label="Telephone: activate to sort column ascending">Active
+                                                aria-label="Telephone: activate to sort column ascending">Average time
                                             </th>
                                         </tr>
                                         </thead>

@@ -3,11 +3,14 @@
 
 class Queues extends CI_Controller
 {
+    var $emp_id = null;
+
     public function __construct()
     {
         parent::__construct();
 
         $this->load->model('Queue_model');
+        $this->load->model('Employee_model');
     }
 
     public function index()
@@ -21,11 +24,11 @@ class Queues extends CI_Controller
         $data = array();
         foreach ($list as $queue) {
             $row = array();
+            $row[] = $queue->first_name . ' ' . $queue->last_name;
             $row[] = $queue->current_no;
-            $row[] = $queue->start;
-            $row[] = $queue->end;
+            $row[] = $queue->start_time;
+            $row[] = $queue->end_time;
             $row[] = $queue->average_time;
-            $row[] = $queue->active;
 
             $data[] = $row;
         }

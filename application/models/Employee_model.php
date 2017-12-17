@@ -134,4 +134,23 @@ class Employee_model extends CI_Model
         $this->db->from('employee');
         return $this->db->count_all_results();
     }
+
+    // Get employee list by applying a like querry on name
+    public function get_doctors($name_part)
+    {
+        $this->db->select('*');
+        $this->db->from('employee');
+        $this->db->join('role', "employee.role_id = role.id AND role.name = 'Doctor'");       
+        $this->db->like('employee.first_name', $name_part); 
+        $this->db->or_like('employee.middle_name', $name_part); 
+        $this->db->or_like('employee.last_name', $name_part); 
+
+        // Order result
+        $order = array('employee.first_name' => 'asc', 'employee.middle_name' => 'asc', 'employee.last_name' => 'asc'); 
+        $this->db->order_by(key($order), $order[key($order)]);
+
+        // Retrieve rows
+        $query = $this->db->get();
+        return $query->result();
+    }
 }
