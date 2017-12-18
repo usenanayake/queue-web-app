@@ -34,8 +34,7 @@ class New_patient extends CI_Controller
 
         // Validate form input
 //        if ($this->form_validation->run() == FALSE)
-        if(FALSE)
-        {
+        if (FALSE) {
             $this->load->view('new_patient');
         } else {
             // Insert the user registration details into database

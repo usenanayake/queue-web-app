@@ -325,8 +325,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="row row-sm">
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src=".<?php echo base_url() ?>assets/images/a0.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src=".<?php echo base_url() ?>assets/images/a0.jpg"
+                                                            alt="..."> <i
                                                             class="on b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Crystal Guerrero</a></div>
@@ -336,8 +337,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a1.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a1.jpg"
+                                                            alt="..."> <i
                                                             class="on b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">James Garcia</a></div>
@@ -358,8 +360,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a3.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a3.jpg"
+                                                            alt="..."> <i
                                                             class="busy b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Joe Holmes</a></div>
@@ -369,8 +372,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a4.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a4.jpg"
+                                                            alt="..."> <i
                                                             class="on b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Judith Garcia</a></div>
@@ -380,8 +384,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a5.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a5.jpg"
+                                                            alt="..."> <i
                                                             class="on b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Judy Woods</a></div>
@@ -391,8 +396,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a6.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a6.jpg"
+                                                            alt="..."> <i
                                                             class="on b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">OlsJesse Russell</a></div>
@@ -402,8 +408,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a7.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a7.jpg"
+                                                            alt="..."> <i
                                                             class="away b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Richard Carr</a></div>
@@ -413,8 +420,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                     <div class="col-xs-6 col-lg-4">
                                         <div class="list-item box r m-b"><a herf="" class="list-left"><span
-                                                        class="w-40 avatar"><img src="<?php echo base_url() ?>assets/images/a8.jpg"
-                                                                                 alt="..."> <i
+                                                        class="w-40 avatar"><img
+                                                            src="<?php echo base_url() ?>assets/images/a8.jpg"
+                                                            alt="..."> <i
                                                             class="busy b-white bottom"></i></span></a>
                                             <div class="list-body">
                                                 <div class="text-ellipsis"><a href="">Sara King</a></div>

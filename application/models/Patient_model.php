@@ -2,8 +2,8 @@
 
 class Patient_model extends CI_Model
 {
-    var $column_order = array(null, 'first_name','middle_name','last_name','nic','dob','gender', 'telephone', 'address', 'email'); // Set column field database for datatable orderable
-    var $column_search = array('first_name','middle_name','last_name','nic','dob','gender', 'telephone', 'address', 'email'); // Set column field database for datatable searchable 
+    var $column_order = array(null, 'first_name', 'middle_name', 'last_name', 'nic', 'dob', 'gender', 'telephone', 'address', 'email'); // Set column field database for datatable orderable
+    var $column_search = array('first_name', 'middle_name', 'last_name', 'nic', 'dob', 'gender', 'telephone', 'address', 'email'); // Set column field database for datatable searchable
 
     // Insert into user table
     function insert_patient($data)
@@ -72,60 +72,55 @@ class Patient_model extends CI_Model
     {
         $this->db->select('*');
         $this->db->from('patient');
- 
+
         $i = 0;
-     
+
         foreach ($this->column_search as $item) // Loop column 
         {
-            if(isset($_POST['search']['value'])) // If datatable send POST for search
+            if (isset($_POST['search']['value'])) // If datatable send POST for search
             {
-                if($i === 0) // First loop
+                if ($i === 0) // First loop
                 {
                     $this->db->group_start(); // Open bracket
                     $this->db->like($item, $_POST['search']['value']);
-                }
-                else
-                {
+                } else {
                     $this->db->or_like($item, $_POST['search']['value']);
                 }
- 
-                if(count($this->column_search) - 1 == $i) // Last loop
+
+                if (count($this->column_search) - 1 == $i) // Last loop
                 {
                     $this->db->group_end(); // Close bracket                    
                 }
             }
             $i++;
         }
-         
-        if(isset($_POST['order'])) // Order processing
+
+        if (isset($_POST['order'])) // Order processing
         {
             $this->db->order_by($this->column_order[$_POST['order']['0']['column']], $_POST['order']['0']['dir']);
-        } 
-        else
-        {
+        } else {
             $order = array('patient.id' => 'asc'); // Default order
             $this->db->order_by(key($order), $order[key($order)]);
         }
     }
- 
+
     function get_datatables()
     {
         $this->_get_datatables_query();
-        if($_POST['length'] != -1)
-        {
-            $this->db->limit($_POST['length'], $_POST['start']);            
+        if ($_POST['length'] != -1) {
+            $this->db->limit($_POST['length'], $_POST['start']);
         }
         $query = $this->db->get();
         return $query->result();
     }
- 
+
     function count_filtered()
     {
         $this->_get_datatables_query();
         $query = $this->db->get();
         return $query->num_rows();
     }
- 
+
     public function count_all()
     {
         $this->db->from('patient');

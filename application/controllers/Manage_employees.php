@@ -1,5 +1,5 @@
 <?php
- defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Manage_employees extends CI_Controller
 {
@@ -32,13 +32,13 @@ class Manage_employees extends CI_Controller
 
             $data[] = $row;
         }
- 
+
         $output = array(
-                        "draw" => $_POST['draw'],
-                        "recordsTotal" => $this->Employee_model->count_all(),
-                        "recordsFiltered" => $this->Employee_model->count_filtered(),
-                        "data" => $data,
-                );
+            "draw" => $_POST['draw'],
+            "recordsTotal" => $this->Employee_model->count_all(),
+            "recordsFiltered" => $this->Employee_model->count_filtered(),
+            "data" => $data,
+        );
 
         // Output to json format
         echo json_encode($output);

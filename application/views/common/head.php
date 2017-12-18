@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/animate.css/animate.min.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/glyphicons/glyphicons.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/font-awesome/css/font-awesome.min.css" type="text/css"/>
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/material-design-icons/material-design-icons.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo base_url() ?>assets/material-design-icons/material-design-icons.css"
+      type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/bootstrap/dist/css/bootstrap.min.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/styles/app.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url() ?>assets/styles/font.css" type="text/css"/>

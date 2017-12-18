@@ -21,7 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-sm w w-auto-xs light lt bg-auto">
                     <div class="padding pos-rlt">
                         <div>
-                            <button class="btn btn-sm white pull-right hidden-sm-up" ui-toggle-class="show" target="#inbox-menu"><i class="fa fa-bars"></i></button>
+                            <button class="btn btn-sm white pull-right hidden-sm-up" ui-toggle-class="show"
+                                    target="#inbox-menu"><i class="fa fa-bars"></i></button>
                             <a href="" class="btn btn-sm white w-xs">Compose</a>
                         </div>
                         <div class="hidden-xs-down m-t" id="inbox-menu">
@@ -47,8 +48,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!-- header -->
                             <div class="m-b">
                                 <div class="btn-group pull-right">
-                                    <button type="button" class="btn btn-sm white"><i class="fa fa-chevron-left"></i></button>
-                                    <button type="button" class="btn btn-sm white"><i class="fa fa-chevron-right"></i></button>
+                                    <button type="button" class="btn btn-sm white"><i class="fa fa-chevron-left"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-sm white"><i class="fa fa-chevron-right"></i>
+                                    </button>
                                 </div>
                                 <div class="btn-toolbar">
                                     <div class="btn-group dropdown">
@@ -62,7 +65,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                     </div>
                                     <div class="btn-group">
-                                        <button class="btn btn-sm white" data-toggle="tooltip" data-placement="bottom" data-title="Refresh" data-original-title="" title=""><i class="fa fa-refresh"></i></button>
+                                        <button class="btn btn-sm white" data-toggle="tooltip" data-placement="bottom"
+                                                data-title="Refresh" data-original-title="" title=""><i
+                                                    class="fa fa-refresh"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +90,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Bootstrap components written in pure AngularJS</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Retur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper Neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Retur adipiscing elit. Morbi id
+                                            neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum
+                                            ullamcorper Neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-warning">
@@ -103,7 +111,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Nesting view in Angular</a>
                                             <span class="label label-xs m-l-sm text-u-c">AngularJS</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Neque quam. Aliquam sollicitudin
+                                            venenatis ipsum ac feugiat.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-primary">
@@ -121,7 +131,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">What a hot day </a>
                                             <span class="label label-xs m-l-sm text-u-c">Client</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Duis non malesuada est, quis congue nibh.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Duis non malesuada est, quis
+                                            congue nibh.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-warn">
@@ -136,10 +148,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <i class="fa fa-paperclip m-l-sm"></i>
                                         </div>
                                         <div>
-                                            <a href="" class="_500">Lazy loading Angular controllers, directives and services</a>
+                                            <a href="" class="_500">Lazy loading Angular controllers, directives and
+                                                services</a>
                                             <span class="label label-xs m-l-sm text-u-c">AngularJS</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam</div>
+                                        <div class="text-ellipsis text-muted text-sm">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. Morbi id neque quam
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-info">
@@ -157,7 +172,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Oho!</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Turpis egestas lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Turpis egestas lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x">
@@ -175,7 +192,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Meeting</a>
                                             <span class="label label-xs m-l-sm text-u-c">Work</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Vestibulum ullamcorper Neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Vestibulum ullamcorper Neque quam.
+                                            Aliquam sollicitudin venenatis ipsum ac feugiat.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-warn">
@@ -193,7 +212,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Product version released</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat</div>
+                                        <div class="text-ellipsis text-muted text-sm">Consectetur adipiscing elit. Morbi
+                                            id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x">
@@ -211,7 +232,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Hi, What's up</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Aliquam sollicitudin venenatis ipsum ac feugiat.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Aliquam sollicitudin venenatis
+                                            ipsum ac feugiat.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x b-success">
@@ -229,7 +252,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Kick-off meeting at 5:00 pm</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Aliquam sollicitudin venenatis ipsum ac feugiat.</div>
+                                        <div class="text-ellipsis text-muted text-sm">Aliquam sollicitudin venenatis
+                                            ipsum ac feugiat.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="list-item b-l b-l-2x">
@@ -247,7 +272,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <a href="" class="_500">Bootstrap 4 Coming</a>
                                             <span class="label label-xs m-l-sm text-u-c">Bootstrap</span>
                                         </div>
-                                        <div class="text-ellipsis text-muted text-sm">Aww yeah, Bootstrap 4 is coming! </div>
+                                        <div class="text-ellipsis text-muted text-sm">Aww yeah, Bootstrap 4 is coming!
+                                        </div>
                                     </div>
                                 </div>
                             </div>

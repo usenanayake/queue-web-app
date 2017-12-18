@@ -42,16 +42,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <small class="text-muted">Queue management</small>
                     </li>
                     <li>
-                    <a href="<?php echo site_url('Queues'); ?>">
+                        <a href="<?php echo site_url('Queues'); ?>">
                        <span class="nav-icon">
                        <i class="material-icons">&#xe3fc;
                        <span ui-include="'<?php echo base_url() ?>assets/images/i_0.svg'"></span>
                        </i>
                        </span>
-                        <span class="nav-text">Queues</span>
-                    </a>
-                </li>
-                <li>
+                            <span class="nav-text">Queues</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?php echo site_url('Reservations'); ?>">
                            <span class="nav-icon">
                            <i class="material-icons">&#xe3fc;
@@ -152,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li>
                         <div class="b-b b m-t-sm"></div>
                     </li>
-                    <li class="no-bg"><a href="<?php echo site_url('Sign_in/index'); ?>"><span class="nav-icon"><i
+                    <li class="no-bg"><a href="<?php echo site_url('Login/signout'); ?>"><span class="nav-icon"><i
                                         class="material-icons"></i></span> <span
                                     class="nav-text">Logout</span></a></li>
                 </ul>

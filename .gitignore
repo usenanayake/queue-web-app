@@ -3,3 +3,4 @@ vendor/
 flatkit113/
 workspace.xml
 user_guide/
+application/tests/build/

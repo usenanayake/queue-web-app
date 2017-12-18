@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <link rel="stylesheet"
           href="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/parsley.css">
     <link rel="stylesheet" type="text/css"
           href="<?php echo base_url() ?>assets/libs/jquery/plugins/integration/bootstrap/3/dataTables.bootstrap.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/manage.css" type="text/css"/>
@@ -32,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="box-divider m-a-0"></div>
                     <div class="box-body">
-                        <form role="form" action="<?php echo site_url('New_patient/register'); ?>" method="post"
+                        <form role="form" action="<?php echo site_url('Queues/add_queue'); ?>" method="post"
                               data-parsley-validate>
                             <div class="row">
                                 <div class="col-md-6">
@@ -55,38 +55,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                                 <div class="col-md-6">
                                     <div class="padding">
-                                    <div class="form-group row">
+                                        <div class="form-group row">
                                             <label for="inputDoctor"
                                                    class="col-sm-2 form-control-label">Doctor</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" id="inputDoctor"
                                                        name="doctor" placeholder="Doctor"
-                                                       data-parsley-minlength="10"
-                                                       data-parsley-maxlength="10">
+                                                       data-parsley-required data-parsley-type="integer">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputStartTime" class="col-sm-2 form-control-label">Start time</label>
+                                            <label for="inputStartTime" class="col-sm-2 form-control-label">Start
+                                                time</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputStartTime"
-                                                       name="startTime" placeholder="Start time"
-                                                       data-parsley-required data-parsley-length="[1, 100]">
+                                                <div class='input-group date' id='starttimepicker'>
+                                                    <input type='text' class="form-control" id="inputStartTime"
+                                                           name="startTime"
+                                                           placeholder="Start time"
+                                                           data-parsley-required/>
+                                                    <span class="input-group-addon">
+                                                                      <span class="fa fa-calendar"></span>
+                                                                      </span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputEndTime" class="col-sm-2 form-control-label">End time</label>
+                                            <label for="inputEndTime" class="col-sm-2 form-control-label">End
+                                                time</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="inputEndTime"
-                                                       name="endTime" placeholder="End time"
-                                                       data-parsley-length="[1, 100]">
+                                                <div class='input-group date' id='endtimepicker'>
+                                                    <input type='text' class="form-control" id="inputEndTime"
+                                                           name="endTime"
+                                                           placeholder="End time"
+                                                           data-parsley-required/>
+                                                    <span class="input-group-addon">
+                                                                              <span class="fa fa-calendar"></span>
+                                                                              </span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="inputAverageTime" class="col-sm-2 form-control-label">Average time</label>
+                                            <label for="inputAverageTime" class="col-sm-2 form-control-label">Average
+                                                time</label>
                                             <div class="col-sm-10">
                                                 <input type="text" class="form-control" id="inputAverageTime"
-                                                       name="averageTime" placeholder="Average time"
-                                                       data-parsley-required data-parsley-length="[1, 100]">
+                                                       name="averageTime" placeholder="Average time (seconds)"
+                                                       data-parsley-required data-parsley-type="integer">
                                             </div>
                                         </div>
                                         <div class="form-group row m-t-md">
@@ -151,6 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <script src="<?php echo base_url() ?>bower_components/moment/min/moment.min.js"></script>
 <script src="<?php echo base_url() ?>bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="<?php echo base_url() ?>assets/libs/jquery/parsleyjs/dist/parsley.min.js"></script>
 <script src="<?php echo base_url() ?>assets/libs/jquery/datatables/media/js/jquery.dataTables.min.js"></script>
 <script src="<?php echo base_url() ?>assets/libs/jquery/plugins/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 <script type="text/javascript">
@@ -200,13 +215,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             }
         });
 
-        $("#datetimepicker").on("dp.change", function(e) {
+        $("#datetimepicker").on("dp.change", function (e) {
             table.search(e.date.format("YYYY-MM-DD")).draw();
         });
 
         // Set search to today
         table.search(moment().format("YYYY-MM-DD")).draw();
-    });    
+
+        $('#starttimepicker').datetimepicker({
+            format: 'HH:mm',
+            defaultDate: moment(),
+            icons: {
+                time: 'fa fa-clock-o',
+                date: 'fa fa-calendar',
+                up: 'fa fa-chevron-up',
+                down: 'fa fa-chevron-down',
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+
+        $('#endtimepicker').datetimepicker({
+            format: 'HH:mm',
+            defaultDate: moment().add(2, 'hours'),
+            icons: {
+                time: 'fa fa-clock-o',
+                date: 'fa fa-calendar',
+                up: 'fa fa-chevron-up',
+                down: 'fa fa-chevron-down',
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+    });
 </script>
 </body>
 </html>
