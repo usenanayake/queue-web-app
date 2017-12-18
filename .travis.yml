@@ -18,6 +18,8 @@ install:
   - mv CodeIgniter-$CI_VERSION/index.php index.php
   - rm -rf CodeIgniter-$CI_VERSION
 
+before_script: cd application/tests
+
 # run multiple test commands
 script:
   - phpunit                  #default test command

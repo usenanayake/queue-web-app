@@ -76,4 +76,31 @@ class Queue_model extends CI_Model
         $this->db->from('queue');
         return $this->db->count_all_results();
     }
+
+    // Get doctors who has queues in the day
+    public function get_day_doctors($date)
+    {
+        $this->db->select('employee.id, first_name, last_name');
+        $this->db->from('employee');
+        $this->db->join('queue', "employee.id = queue.employee_id");
+        $this->db->where('queue.date', $date);
+        $this->db->group_by("employee.id");
+
+        // Retrieve rows
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    // Get queues of days and doctors
+    public function get_day_doctor_queues($date, $doctor_id)
+    {
+        $this->db->select('*');
+        $this->db->from('queue');
+        $this->db->where('queue.date', $date);
+        $this->db->where('queue.employee_id', $doctor_id);
+
+        // Retrieve rows
+        $query = $this->db->get();
+        return $query->result();
+    }
 }

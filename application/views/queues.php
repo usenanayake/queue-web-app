@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="box">
                     <div class="box-header">
                         <h2>Manage queues</h2>
-                        <small>Manage queues for each doctor.</small>
+                        <small>Manage queues for each doctor</small>
                     </div>
                     <div class="box-divider m-a-0"></div>
                     <div class="box-body">

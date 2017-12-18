@@ -152,9 +152,6 @@ class Employee_model extends CI_Model
     // Get employee details for sign in
     public function get_employee_id($username, $password)
     {
-//        $username = $this->db->escape($username);
-//        $password = $this->db->escape($password);
-
         $this->db->select('*');
         $this->db->from('employee_login');
         $this->db->where('employee_login.username', $username);
