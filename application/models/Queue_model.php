@@ -103,4 +103,27 @@ class Queue_model extends CI_Model
         $query = $this->db->get();
         return $query->result();
     }
+
+    // Get queue details
+    public function get_queue($queue_id)
+    {
+        $this->db->select('*');
+        $this->db->from('queue');
+        $this->db->where('queue.id', $queue_id);
+
+        // Retrieve rows
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    // Update queue current no.
+    public function update_queue_current_no($queue_id, $current_no)
+    {
+        $data = array(
+            'current_no' => $current_no
+        );
+
+        $this->db->where('id', $queue_id);
+        $this->db->update('queue', $data);
+    }
 }

@@ -16,9 +16,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--            Side bar profile-->
         <div flex-no-shrink="">
             <div class="nav-fold"><a href="<?php echo site_url('Profile/index'); ?>" ui-sref="app.page.profile"><span
-                            class="pull-left"><img src="<?php echo base_url() ?>assets/images/a2.jpg" alt="..."
+                            class="pull-left"><img src="<?php echo base_url() ?>assets/images/oshan.jpg" alt="..."
                                                    class="w-40 r"></span> <span
-                            class="clear hidden-folded p-x"><span class="block _500">Jack Perez</span> <small
+                            class="clear hidden-folded p-x"><span class="block _500">Oshan Ivantha</span> <small
                                 class="block text-muted">Administrator</small></span></a></div>
         </div>
         <!--            Side bar items-->
@@ -145,10 +145,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li>
                         <div class="b-b b m-v-sm"></div>
                     </li>
-                    <li class="no-bg"><a class="auto"><span class="nav-icon"><i class="material-icons inline"></i> <i
-                                        class="material-icons text-warn none"></i></span> <span
-                                    class="nav-text">Notifications</span></a>
-                    </li>
+<!--                    <li class="no-bg"><a class="auto"><span class="nav-icon"><i class="material-icons inline"></i> <i-->
+<!--                                        class="material-icons text-warn none"></i></span> <span-->
+<!--                                    class="nav-text">Notifications</span></a>-->
+<!--                    </li>-->
                     <li>
                         <div class="b-b b m-t-sm"></div>
                     </li>

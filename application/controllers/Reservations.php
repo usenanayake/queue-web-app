@@ -8,6 +8,8 @@ class Reservations extends CI_Controller
         parent::__construct();
 
         $this->load->model('Queue_model');
+        $this->load->helper(array('form'));
+        $this->load->library(array('form_validation'));
     }
 
     public function index()
@@ -31,5 +33,21 @@ class Reservations extends CI_Controller
 
         // Output to json format
         echo json_encode($list);
+    }
+
+    // Get queue details
+    public function get_queue()
+    {
+        $list = $this->Queue_model->get_queue($_POST['queue_id']);
+
+        // Output to json format
+        echo json_encode($list);
+    }
+
+    // Update queue current no.
+    public function update_queue_current_no()
+    {
+        $this->Queue_model->update_queue_current_no($_POST['queueSelect'], $_POST['currentNo']);
+        redirect('Reservations');
     }
 }

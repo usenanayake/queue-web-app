@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                             <div class="box-divider m-a-0"></div>
                             <div class="box-body">
-                                <form role="form" action="<?php echo site_url('New_employee/register'); ?>"
+                                <form role="form" action="<?php echo site_url('Reservations/update_queue_current_no'); ?>"
                                       method="post"
                                       data-parsley-validate>
                                     <div class="row">
@@ -59,14 +59,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 form-control-label">Doctor</label>
                                                     <div class="col-sm-10">
-                                                        <select id="doctorSelect" class="form-control input-c">
+                                                        <select id="doctorSelect" name="doctorSelect" class="form-control input-c">
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 form-control-label">Queue</label>
                                                     <div class="col-sm-10">
-                                                        <select id="queueSelect" class="form-control input-c">
+                                                        <select id="queueSelect" name="queueSelect" class="form-control input-c">
                                                         </select>
                                                     </div>
                                                 </div>
@@ -165,7 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         });
 
         $('#queueSelect').on("change", function (e) {
-
+            refreshQueue();
         });
 
         // Manually trigger the doctor list
@@ -195,6 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         select.appendChild(opt);
                     }
 
+                    document.getElementById("doctorSelect").selectedIndex = "0";
                     populateSelectQueue();
                 }
             });
@@ -224,12 +225,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         opt.innerHTML = res[i]['start_time'] + ' : ' + res[i]['end_time'];
                         select.appendChild(opt);
                     }
+
+                    document.getElementById("queueSelect").selectedIndex = "0";
+                    refreshQueue();
                 }
             });
         }
 
         function refreshQueue(){
-            queue  = document.getElementById('queueSelect');
+            $.ajax({
+                url: "<?php echo site_url('Reservations/get_queue'); ?>",
+                type: 'POST',
+                data: {
+                    queue_id : document.getElementById('queueSelect').value
+                },
+                dataType: 'json',
+                success: function(res) {
+                    document.getElementById('inputStartTime').value = res[0]['start_time'];
+                    document.getElementById('inputEndTime').value = res[0]['end_time'];
+                    document.getElementById('inputAverageTime').value = res[0]['average_time'] + ' seconds';
+                    document.getElementById('inputCurrentNo').value = res[0]['current_no'];
+                }
+            });
         }
     });
 </script>
